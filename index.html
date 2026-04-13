@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Student Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ECE Bookstore</h1>
+        <p>Resources for Circuit Theory, DSP, and AI</p>
+    </header>
+
+    <nav>
+        <button onclick="filterCategory('All')">All Books</button>
+        <button onclick="filterCategory('Circuits')">Circuits</button>
+        <button onclick="filterCategory('Signal Processing')">DSP</button>
+    </nav>
+
+    <main id="book-grid">
+        <div class="book-card" data-category="Circuits">
+            <div class="book-cover">📘</div>
+            <h3>Electronic Devices</h3>
+            <p>Boylestad & Nashelsky</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+        <div class="book-card">
+    <div class="book-cover">📘</div> 
+    
+    <h3>Microelectronics</h3> 
+    
+    <p>Adel S. Sedra</p> 
+    
+    <button class="buy-btn">Add to Cart</button>
+</div>
+
+        <div class="book-card" data-category="Signal Processing">
+            <div class="book-cover">📟</div>
+            <h3>Signals & Systems</h3>
+            <p>Alan V. Oppenheim</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
